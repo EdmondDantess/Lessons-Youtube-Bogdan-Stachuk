@@ -85,3 +85,39 @@ const person2 = JSON.parse(JSON.stringify(person));
 person2.name = 'Jhon';
 console.log(person2.name);
 console.log(person.name); */
+
+/* //Функция
+function f(a, b) {  //a, b параметры они же переменные
+    let c;
+    c = a + b;
+    console.log(c);
+    return c
+};
+f(1, 3);     //вызов функции где 1 и 3 это аргументы */
+
+/*  //Передача значения по ссылке внешнего объекта
+const personOne = {
+    name: 'Bob',
+    age: 21
+};
+function increasePersonAge(person) {   //Функция мутирует внешний объект (так не рекоммендуется делать)
+    person.age += 3;
+    return person
+};
+increasePersonAge(personOne);    //Передача обекта по ссылке
+console.log(personOne.age);  */
+
+
+/* //Передача значения через копию объекта без мутации
+const personOne = {
+    name: 'Bob',
+    age: 21
+};
+function increasePersonAge(person) { 
+    const updatedPerson = Object.assign({}, person);  
+    updatedPerson.age += 3;
+    return updatedPerson
+};
+const updatedPersonOne = increasePersonAge(personOne);  
+console.log(personOne.age);
+console.log(updatedPersonOne.age) */
