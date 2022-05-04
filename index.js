@@ -208,3 +208,42 @@ console.log(hasSignedAgreement);
  const [fruitOne, fruitTwo] = fruits; //Объявление новых переменных и присваивание значений на основе элементов массива
   console.log(fruitOne);
   console.log(fruitTwo); */
+
+/*  //Деструктуризация в функциях
+  const userProfile = {
+    name: 'Maksim',
+    commentsQty: 23,
+    hasSignedAgreement: false,
+}
+const userInfo = ({ name, commentsQty}) => {  //деструктуризация параметров
+    if (!commentsQty) {
+        return `User ${name} has no comments`
+    }
+    return `User ${name} has ${commentsQty} comments`
+}
+console.log(userInfo(userProfile)) */
+
+/*   //Использование if в функциях
+const sumPositiveNumbers = (a, b) => {
+    if (typeof a !== 'number' || typeof b !== 'number') {
+        return 'One of the arguments is not a number'
+    }
+    if (a <= 0 || b <= 0) {
+        return 'Numbers are not positive'
+    }
+    return a + b
+}
+console.log(sumPositiveNumbers(3, -6))  */
+
+/* //Инструкция Switch
+switch (Выражение) {
+    case A:
+        //Действия если Выражение === А
+        break
+    case B:
+        //Действия если Выражение === B
+        break
+    default:
+    //Действия по умолчанию
+} */
+
