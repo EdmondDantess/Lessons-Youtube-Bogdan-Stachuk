@@ -247,3 +247,73 @@ switch (Выражение) {
     //Действия по умолчанию
 } */
 
+/*    //Цикл for  
+for (let i = 0; i < 5; i++) {    //даны три инструкции, и цикл будет выполнятся пока i<5
+    console.log(i)
+}
+
+const myArray = ['first', 'second', 'third'];
+for (let i = 0; i < myArray.length; i++) {    // (не рекоммендуется для массивов, лучше юзать foreach, map, reduce)
+    console.log(myArray[i])
+}
+myArray.forEach((element, index) => {   (Тоже самое выполнение только методом forEach)
+    console.log(element, index)
+}) */
+
+/*  //Цикл while  
+  let i=0;
+  while (i<5) {             //Цикл while выполняется пока условие правдиво
+      console.log(i);
+      i++               //если будет отсутсвовать эта строка, цикл будет выполняться бесконечно!!!
+  }
+*/
+
+/*   //Цикл do while
+let i=0;
+do {  
+    console.log(i);        //выполнится  1 раз при ложном условии 
+    i++
+} while (i<5)
+*/
+
+ /*  //Цикл for in для объектов
+   const myObject = {
+       x: 10,
+       y: true,
+       z: 'abc'
+   }
+    
+   for (const key in myObject) {    //объявили key, подразумивается что это свойство объекта, myObject название переменной объекта выше
+       console.log(key, myObject[key])  //увидели все св-ва объекта
+   }
+      //Object.keys(myObject)  это метод создающий массив из св-в объекта
+   Object.keys(myObject).forEach(key => {   //сделали тоже самое через forEach, через перебор свойств,
+       console.log(key, myObject[key])
+   })
+   //Object.values(myObject)  это метод создающий массив из значений св-в объекта
+   Object.values(myObject).forEach(value => {   //сделали тоже самое через forEach, через перебор значений
+    console.log(value)
+})  
+
+  //for in для массивов (не рекоммендуется, лучше юзать forEach т.к. он родной для массивов)
+const myArray = [true, 10, 'abc', null]
+for (const key in myArray) {   //key переменная, на каждой итерации в цикле будет создаваться новая переменая кеу. кеу по сути индекс каждого элемента в массиве
+    console.log(myArray[key])
+}
+*/
+
+
+ //Цикл for of (он не для Объектов!!!! и не юзаем с массивами)
+ //for (Element of Iterable) {  //Element любой элемент, Iterable это то из чего будем перебирать
+ // действия с любым элементом
+ //}
+/*
+const myString = 'Hey';
+for (const letter of myString) {
+    console.log(letter )
+}
+*/
+
+
+
+
